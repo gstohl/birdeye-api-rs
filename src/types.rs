@@ -10,6 +10,8 @@ pub enum BirdeyeError {
     Url(#[from] url::ParseError),
     #[error("JSON error: {0}")]
     Json(#[from] serde_json::Error),
+    #[error("HTTP error: {0}")]
+    Http(#[from] reqwest::Error),
 }
 
 #[derive(Debug, Serialize)]
