@@ -1,1 +1,4 @@
-# Attention only WS integrated for now!
+# Attention
+
+Only WS integration
+Solana crypto is fixed for now
